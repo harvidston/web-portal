@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "MontLight";
+    src: url('fonts/Mont/ofont.ru_Mont.ttf');
+}
+@font-face {
+    font-family: "MontBold";
+    src: url('fonts/Mont/Mont\ bold.ttf');
+}
+
+/* <------HEADER------>*/
+header {
+    font-family: "MontLight";
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+	height: 10vh;
+	display: flex;
+	margin: auto;
+	align-items: center;
+    color: #fff;
+}
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+.logo-container {
+    margin-left: 40px;
+	flex: 1;
+    /* margin-top: 5px; */
+}
+.logo {
+	font-weight: 400;
+    font-size: 18px;
+	margin-top: 9px;
+    margin-left: 5px;
+}
+nav {
+    z-index: 1000;
+	flex: 2;
+    margin-top: 25px;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+    color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+/* <------MAIN PAGE------>*/
+.about-portal{
+    height: 100vh;
+    background: url('/images/forest.jpg')0 0/100% 100% no-repeat;
+}
+.title-container{
+    /* height: 100vh; */
+    width: 100%;
+    max-width: 50%;
+    padding: 0px; 
+    margin: 0 auto;
+    text-align: center;
+   
+}
+.about-title{
+    font-family: "MontBold";
+    color: #fff;
+    font-size: 48px;
+    /* padding-top: 300px; */
+    line-height: 100vh;
+
+    transform: translate(0px, 40%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+   
+}
+.about-title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+/* <------SECOND PAGE 2.0------>*/
+.second-page {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    padding: 15vh 15vh;
+    align-items: center;
+	display: flex;
+}
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, black, transparent);
+}
+.introduction {
+	flex: 1;
+    /* height: 80vh;
+    width: 100%;
+    padding: 40px 40px; */
+}
+.intro-text h1 {
+    font-family: "MontBold";
+    color: #fff;
+    font-size: 48px;
+}
+.intro-text h2{
+    font-family: "MontBold";
+    color: #fff;
+    font-size: 48px;
+}
+.intro-text p {
+    font-family: "MontLight";
+    color: #fff;
+font-size: 18px;
+	margin-top: 5px;
+}
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+} 
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+    border-radius: 10px;
+} 
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+} 
+
+/* <------DEVELOPERS------>*/
+.developers{
+    height: 123vh;
+    /* background-color: white; */
+    position: relative;
+    background: url('images/forest2.jpg')0 0/100% 100% no-repeat;
+    padding-top: 20px;
+
+}
+.shadow2 {
+    position: absolute;
+    top: 100%;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    z-index: 100000;
+    background: linear-gradient(to bottom, black, transparent);
+}
+.container {
+    padding-top: 40px;
+    height: 35vh;
+    margin-bottom: 30px;
+
+}
+.developers-title{
+    font-family: "MontBold";
+    font-size: 48px;
+    color: #fff;
+    margin-top: 70px;
+    z-index: 10000000; 
+    position: relative;
+}
+.developers-subtitle{
+    font-family: "MontLight";
+    font-size: 22px;
+    color: white;
+    position: relative;
+    z-index: 1000000000000000;
+
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  /* background: rgba(47, 180, 180, 0.199); */
+  /* padding: 1.4em 2.5em; */
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  /* padding: 2.5rem 3rem; */
+  color: black;
+}
+
+.card-body .pricing {
+  /* background: rgba(38, 141, 141, 0.199); */
+  /* background: rgba(208, 241, 241, 0.199); */
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+  
+  /* padding: 1em 0.5em; */
+}
+
+
+.card-img-top{
+    height: 100px;
+    width: 320px;
+margin-left: 50px;
+margin-bottom: 60px;
+}
+.card-title{
+    font-family: "MontBold";
+    color: black;
+    font-size: 28px;
+}
+.card-text{
+    font-family: "MontLight";
+    color: black;
+    font-size: 16px;
+}
+.col-md-4{
+    flex: 1;
+    margin-left: 150px;
+
+}
+
+h4{
+    color: #fff;
+}
+
+.section-4{
+    height: 80vh;
+    display: flex;
+    width: 100%;
+z-index: 10000;
+}
+
+.section-4 .card {
+  width: 25em;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+.link-github{
+    font-family: "MontLight";
+    font-size: 18px;
+    color: black;
+}
