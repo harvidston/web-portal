@@ -68,7 +68,7 @@ nav {
 /* <------MAIN PAGE------>*/
 .about-portal{
     height: 100vh;
-    background: url('/images/forest.jpg')0 0/100% 100% no-repeat;
+    background: url('images/forest.jpg')0 0/100% 100% no-repeat;
 }
 .title-container{
     /* height: 100vh; */
